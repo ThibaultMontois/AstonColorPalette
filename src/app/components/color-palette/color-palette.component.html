@@ -1,0 +1,22 @@
+<div class="color-palette">
+    <h1>Palette</h1>
+
+    <div class="color-palette__main">
+
+        <div class="color-palette__blocks">
+            <app-color-block *ngFor="let block of blocks" [block]="block"></app-color-block>
+        </div>
+
+        <div class="color-palette__sliders">
+            <app-slider *ngFor="let slider of sliders" [slider]="slider" (sliderInput)="onSliderInput($event)">
+            </app-slider>
+        </div>
+
+    </div>
+
+    <div class="color-palette__css-text">
+        <p>:root &#x7B;</p>
+        <app-css-text *ngFor="let text of texts"  [text]="text"></app-css-text>
+        <p>}</p>
+    </div>
+</div>
