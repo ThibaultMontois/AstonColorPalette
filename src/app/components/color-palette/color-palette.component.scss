@@ -1,0 +1,21 @@
+.color-palette {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__main,
+    &__blocks {
+        display: flex;
+        gap: 25px;
+    }
+    &__sliders {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__css-text {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        line-height: 0.3;
+    }
+}

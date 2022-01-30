@@ -1,0 +1,5 @@
+<div class="slider">
+    <span>{{ slider.name[0] | uppercase }}</span>
+    <input type="range" [max]="slider.max" [min]="slider.min" [value]="slider.value" (input)="onInput($event)" />
+    <input type="number" [max]="slider.max" [min]="slider.min" [value]="slider.value" (input)="onInput($event)" />
+</div>

@@ -1,0 +1,28 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    span {
+        width: 10px;
+    }
+    input {
+        appearance: none;
+        border-radius: 2px;
+        outline: 0;
+        background-color: rgba(128, 128, 128, 0.25);
+        &[type="range"] {
+            width: 180px;
+            height: 20px;
+            cursor: pointer;
+        }
+        &[type="number"] {
+            width: 60px;
+            height: 30px;
+            padding: 2px 8px;
+            border: 0;
+            box-sizing: border-box;
+            color: inherit;
+        }
+    }
+}
