@@ -12,6 +12,10 @@ export class ColorBlockComponent {
 
   constructor() { }
 
+  getName(): string {
+    return this.block.name;
+  }
+
   getHSL(): string {
     return `hsl(${this.block.hue + this.block.hueModifier}, ${this.block.saturation}%, ${this.block.lightness}%)`;
   }

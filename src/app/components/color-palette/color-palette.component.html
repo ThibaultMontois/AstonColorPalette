@@ -15,8 +15,10 @@
     </div>
 
     <div class="color-palette__css-text">
-        <p>:root &lbrace;</p>
-        <app-css-text *ngFor="let text of texts"  [text]="text"></app-css-text>
-        <p>}</p>
+        <p>
+            :root &lbrace;
+            <span *ngFor="let block of blocksList">&Tab;--clr-{{ block.getName()}}: {{ block.getHSL() }};</span>
+            }
+        </p>
     </div>
 </div>
